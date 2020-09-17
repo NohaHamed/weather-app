@@ -1,11 +1,11 @@
 const openWeatherKey = '37472390ca691b1e306b6b08fa5fb10c';
-const weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?units=metric&q=London&appid=37472390ca691b1e306b6b08fa5fb10c';
+const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=London&appid=37472390ca691b1e306b6b08fa5fb10c';
 
 
 
 
 function getData(city) {
-  $.get(`http://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=37472390ca691b1e306b6b08fa5fb10c`, function(data) {
+  $.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=37472390ca691b1e306b6b08fa5fb10c`, function(data) {
     console.log(data);
       createHtml(data);
     });
@@ -16,7 +16,7 @@ function createHtml(obj) {
   $('.weather').append(
 
     `<h2>${obj.name}, ${obj.sys.country}</h2>
-    <img src="http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png" alt="weather icon">
+    <img src="https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png" alt="weather icon">
     <table>
       
         <tr>
