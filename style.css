@@ -1,0 +1,90 @@
+:root {
+--queen-blue: hsla(206, 46%, 37%, 1);
+--dark-sky-blue: hsla(201, 51%, 69%, 1);
+--moss-green: hsla(84, 29%, 43%, 1);
+--chinese-yellow: hsla(39, 92%, 57%, 1);
+--safety-orange-blaze-orange: hsla(21, 89%, 52%, 1);
+}
+body {
+    background: url(./outer-space.jpg) center;
+    /* background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./outer-space.jpg) cover; */
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    text-align: center; 
+    font-family: 'Nunito', sans-serif;
+}
+h1 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 3px 3px 4px rgb(43, 42, 42);
+}
+h2 {
+    margin: 5px auto 0px auto;
+}
+h3 {
+    text-transform: capitalize;
+    margin: 0px auto 5px auto;
+}
+input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    width: 80px;
+    font-weight: 700;
+    background-color: var(--safety-orange-blaze-orange);
+    border-radius: 5px;
+    color: white;
+    
+}
+button:hover {
+    background-color: var(--chinese-yellow);
+    transition: ease-in-out 0.5s;
+    color: var(--queen-blue);
+    font-weight: 700;
+}
+
+.weather {
+    padding: 15px 0;
+    background: linear-gradient(to bottom right, var(--dark-sky-blue), var(--queen-blue));
+    opacity: 0.9;
+    width: 350px;
+    box-shadow:2px 2px 4px rgb(66, 66, 66);
+    text-shadow: 2px 2px 3px rgb(71, 70, 70);
+    border-radius: 20px;
+    color: white;
+    margin: 20px auto;
+    font-weight: 600;
+}
+
+table {
+    width: 90%;
+    margin: 0px auto 20px auto;
+}
+tr {
+    text-align: center;
+}
+th {
+    color: var(--chinese-yellow);
+    
+}
+td {
+    width: 30px;
+    border-top: 1px solid white;
+}
+

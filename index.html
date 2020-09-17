@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Include the stylesheet -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <title>What is the weather?</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>What is the weather today?</h1>
+    </header>
+
+    <main>
+      
+      <form id="search">
+        <input type="text"  id='city' placeholder="Enter a city ..." /><br>
+        <button id='search' type="submit">Search</button>
+      </form>
+
+      
+      <div class="weather"></div>
+      
+      <button id="restart">Restart</button>
+
+    </main>
+
+    <footer>
+      <!-- Add footer content -->
+    </footer>
+  </div>
+
+ <!-- <script src="index.js"></script> -->
+  <script src ="api.js"></script>
+  <!-- <script src ="fetch.js"></script> -->
+
+</body>
+
+</html>
